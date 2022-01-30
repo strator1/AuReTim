@@ -8,8 +8,11 @@ To install AuReTim on the Raspberry Pi, create the folder “/opt/auretim” and
 To automatically start AuReTim when booting the Raspberry Pi, append the line “sudo /opt/auretim/auretim.sh” to the file “/etc/rc.local”.
 
 To set up the touchscreen as display and for input, the following files have to be copied to the Raspberry Pi:
+
 •	/boot/cmdline.txt
+
 •	/boot/config.txt
+
 •	/etc/modules
 
 These files are basically required to configure the ads7846 kernel module used as a driver for the touchscreen display, as well as the settings (e.g. screen orientation) for the display itself. If a different display is used, the configuration may differ.
